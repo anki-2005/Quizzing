@@ -28,7 +28,7 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(false);
   const [trendingQuizzes, setTrendingQuizzes] = useState([]);
   useEffect(() => {
-    const fetchD = async () => {
+    const fetch = async () => {
       try {
         setLoading(true);
         const res = await newRequest.get(`quiz/trending`);
