@@ -13,7 +13,7 @@ const Home = () => {
       <div className={styles.auth_container}>
         <h1>QUIZZIE</h1>
 
-        <div className={styles.activeComp}>
+        <div class={styles.activeComp}>
           <button
             onClick={() => setActiveAuthComp(0)}
             className={`${styles.register} ${
