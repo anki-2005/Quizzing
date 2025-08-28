@@ -57,7 +57,7 @@ function App() {
                     flex: 1,
                     position: "fixed",
                     top: 0,
-                    backgroundColor: "white",
+                    background: "white",
                   }}
                 >
                   <Sidebar />
