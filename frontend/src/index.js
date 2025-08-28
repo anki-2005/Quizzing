@@ -11,7 +11,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { Toaster } from "react-hot-toast";
 import { ActiveAuthCompProvider } from "./providers/activeAuthComp";
 
-const the = createTheme({
+const theme = createTheme({
   fontFamily: "Roboto, sans-serif",
 });
 
