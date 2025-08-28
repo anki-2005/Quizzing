@@ -40,7 +40,7 @@ function App() {
     );
   };
 
-  const router = createBrowserRouter([
+  const rout = createBrowserRouter([
     {
       path: "/",
       element: <HomeLayout />,
