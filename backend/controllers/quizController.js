@@ -30,7 +30,7 @@ export const createQuiz = async (req, res, next) => {
     ).then(async (res) => {
       // console.log(res);
 
-      const newq = await Quiz.create({
+      const newQuiz = await Quiz.create({
         userId: user._id,
         quizName: quizName,
         quizType: quizType,
