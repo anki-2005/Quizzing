@@ -7,7 +7,7 @@ export const createQuiz = async (req, res, next) => {
   try {
     const { quizName, quizType, timer, optionType, questions } = req.body;
 
-    const user = req.user;
+    const use = req.user;
     if (!user) {
       return next(createError(404, "User not found!"));
     }
@@ -30,7 +30,7 @@ export const createQuiz = async (req, res, next) => {
     ).then(async (res) => {
       // console.log(res);
 
-      const newQuiz = await Quiz.create({
+      const newq = await Quiz.create({
         userId: user._id,
         quizName: quizName,
         quizType: quizType,
