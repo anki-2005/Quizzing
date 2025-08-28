@@ -44,7 +44,7 @@ function App() {
     {
       path: "/",
       element: <HomeLayout />,
-      child: [
+      children: [
         {
           path: "/",
           element: !currentUser ? (
